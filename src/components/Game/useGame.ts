@@ -48,7 +48,7 @@ export const useGame = () => {
         }
       )
     }
-  }, [setBoardItem, setWinner, activePlayer, winner])
+  }, [setBoardItem, setWinner, activePlayer, winner, board])
 
   const startNewGame = useCallback(() => {
     setBoard(initialBoard)
