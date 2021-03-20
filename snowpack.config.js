@@ -11,7 +11,8 @@ module.exports = {
     }
   },
   buildOptions: {
-    baseUrl: '/tictactoe'
+    baseUrl: '/tictactoe',
+    metaUrlPath: 'dist'
   },
   alias: {
     'src/': './src/',
