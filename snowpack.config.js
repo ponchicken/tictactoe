@@ -10,6 +10,9 @@ module.exports = {
       resolve: false
     }
   },
+  buildOptions: {
+    baseUrl: '/tictactoe'
+  },
   alias: {
     'src/': './src/',
     types: './types'
