@@ -12,7 +12,7 @@ module.exports = {
   },
   buildOptions: {
     baseUrl: '/tictactoe',
-    metaUrlPath: 'dist'
+    metaUrlPath: 'snowpack'
   },
   alias: {
     'src/': './src/',
