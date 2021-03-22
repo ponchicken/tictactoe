@@ -37,7 +37,9 @@ export const getWorstMove = (board:Board, player: Player) => {
     const randomAvailableMoveIndex = Math.floor(Math.random() * availableMoves.length)
     const randomAvailableMove = availableMoves[randomAvailableMoveIndex]
     newBoard[randomAvailableMove] = player
-    if (!checkWinner(newBoard)) {
+    if (availableMoves.length === 1) {
+      return availableMoves[0]
+    } else if (!checkWinner(newBoard)) {
       return randomAvailableMove
     } else {
       availableMoves.splice(randomAvailableMoveIndex, 1)
