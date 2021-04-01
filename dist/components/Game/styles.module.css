@@ -1,0 +1,43 @@
+.wrapper {
+  display: grid;
+  grid-gap: 10px;
+}
+
+.controls {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, max-content));
+  align-items: center;
+}
+
+.label {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(10px, max-content));
+  align-items: center;
+}
+
+.label input {
+  margin: 0;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 50px);
+  grid-template-rows: repeat(3, 50px);
+  grid-gap: 5px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  font-size: 30px;
+  background: #479;
+  border-radius: 6px;
+}
+
+.winner-item {
+  background: rgb(124, 15, 15);
+}
